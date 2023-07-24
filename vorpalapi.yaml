@@ -5,8 +5,6 @@ info:
   x-logo:
     url: https://vorpal.gg/public/templates/assets/images/logo.png
   description: >
-    # Vorpal Authentication API
-
     Welcome to the developer portal for our API, everything you need to interact with our API is here. Alternatively you may check out our github for premade API libraries for a variety of programming languages.
 
     ## Frequently asked questions
@@ -22,10 +20,10 @@ info:
 
 # Servers section defines the base URL for API endpoints.
 servers:
-- url: http://localhost:8080/API/
-  description: Local development server.
 - url: http://vorpal.gg/API/
   description: Main (production) server.
+- url: http://localhost:8080/API/
+  description: Local development server.
 
 # Paths section contains the individual API endpoints with their methods and details.
 paths:
@@ -120,6 +118,27 @@ paths:
               example:
                 Result: true
                 Time: 1690096285
+        '433':
+          description: Vorpal error response
+          headers:
+            Authorization:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 532420495d16a460fdb4fd6067be02a9b706c9adafc59e10ac607fb508bf647c
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+                example:
+                  Result: false
+                  Time: 1690096293
+                  Error: Invalid Info
+              example:
+                Result: false
+                Time: 1690096293
+                Error: Invalid Info
       deprecated: false
       security: []
 
@@ -173,12 +192,6 @@ paths:
         '200':
           description: Successful brand variables request
           headers:
-            Date:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: Sun, 23 Jul 2023 07:11:26 GMT
           content:
             text/html; charset=UTF-8:
               schema:
@@ -187,6 +200,27 @@ paths:
                   Brand-Key: value
               example:
                 Brand-Key: value
+        '433':
+          description: Vorpal error response
+          headers:
+            Authorization:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 532420495d16a460fdb4fd6067be02a9b706c9adafc59e10ac607fb508bf647c
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+                example:
+                  Result: false
+                  Time: 1690096293
+                  Error: Invalid Info
+              example:
+                Result: false
+                Time: 1690096293
+                Error: Invalid Info
       deprecated: false
       security: []
 
@@ -264,18 +298,6 @@ paths:
         '200':
           description: Successful login
           headers:
-            Date:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: Sun, 23 Jul 2023 07:11:28 GMT
-            Set-Cookie:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: PHPSESSID=5e18f59e71bf2681769bee24bf46b089; path=/
             Authorization:
               content:
                 text/plain:
@@ -304,6 +326,27 @@ paths:
                 KeyInfo: null
                 Time: 1690096288
                 Result: true
+        '433':
+          description: Vorpal error response
+          headers:
+            Authorization:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 532420495d16a460fdb4fd6067be02a9b706c9adafc59e10ac607fb508bf647c
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+                example:
+                  Result: false
+                  Time: 1690096293
+                  Error: Invalid Info
+              example:
+                Result: false
+                Time: 1690096293
+                Error: Invalid Info
       deprecated: false
       security: []
 
@@ -395,6 +438,27 @@ paths:
                 Result: true
                 Time: 1690096289
                 Info: Successfully redeemed the product Application for 30 days
+        '433':
+          description: Vorpal error response
+          headers:
+            Authorization:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 532420495d16a460fdb4fd6067be02a9b706c9adafc59e10ac607fb508bf647c
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+                example:
+                  Result: false
+                  Time: 1690096293
+                  Error: Invalid Info
+              example:
+                Result: false
+                Time: 1690096293
+                Error: Invalid Info
       deprecated: false
       security: []
 
@@ -447,37 +511,25 @@ paths:
       # Response for checking an application.
       responses:
         '433':
-          description: Error response
+          description: Vorpal error response
           headers:
-            Date:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: Sun, 23 Jul 2023 07:11:31 GMT
-            Set-Cookie:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: PHPSESSID=ae9b166e8dfc99707d87eb07969c92c7; path=/
             Authorization:
               content:
                 text/plain:
                   schema:
                     type: string
-                  example: 6c1aefe740bcc537f42ec5c90f568e1ae02ddc324171c9ce9fbd0183219c7b9b
+                  example: 532420495d16a460fdb4fd6067be02a9b706c9adafc59e10ac607fb508bf647c
           content:
             text/html; charset=UTF-8:
               schema:
                 type: string
                 example:
                   Result: false
-                  Time: 1690096291
+                  Time: 1690096293
                   Error: Invalid Info
               example:
                 Result: false
-                Time: 1690096291
+                Time: 1690096293
                 Error: Invalid Info
       deprecated: false
       security: []
@@ -540,20 +592,8 @@ paths:
       # Response for posting variables.
       responses:
         '433':
-          description: Error response
+          description: Vorpal error response
           headers:
-            Date:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: Sun, 23 Jul 2023 07:11:33 GMT
-            Set-Cookie:
-              content:
-                text/plain:
-                  schema:
-                    type: string
-                  example: PHPSESSID=65d2e4f0740a367515152c1563405b90; path=/
             Authorization:
               content:
                 text/plain:
