@@ -314,8 +314,16 @@ paths:
                   Email: test@vorpal.gg
                   Status: '1'
                   Rank: '0'
-                  KeyInfo: null
-                  Time: 1690096288
+                  KeyInfo:
+                    aFJpUG5sOHFBb21ySk5OazlWSUsyZz09:
+                    - licenseKey: vorpal-testlicense
+                      expiryDays: '30'
+                      expiryDate: 1692688289
+                      hwid: ''
+                      status: 1
+                      lastHWIDReset: 0
+                      ApplicationName: Application
+                  Time: 1690260886
                   Result: true
               example:
                 HashedID: NUNZNUIzbW5JT01mZC9mWGliaWdOUT09
@@ -323,8 +331,16 @@ paths:
                 Email: test@vorpal.gg
                 Status: '1'
                 Rank: '0'
-                KeyInfo: null
-                Time: 1690096288
+                KeyInfo:
+                  aFJpUG5sOHFBb21ySk5OazlWSUsyZz09:
+                  - licenseKey: vorpal-testlicense
+                    expiryDays: '30'
+                    expiryDate: 1692688289
+                    hwid: ''
+                    status: 1
+                    lastHWIDReset: 0
+                    ApplicationName: Application
+                Time: 1690260886
                 Result: true
         '433':
           description: Vorpal error response
@@ -510,6 +526,43 @@ paths:
 
       # Response for checking an application.
       responses:
+        '200':
+          description: Application data successfully fetched
+          headers:
+            Authorization:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 79c8179009116fa4ecf05dc1a582b08abf673501bfe6359fd590c885da8c14fa
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+                example:
+                  Name: Application
+                  Domain: sub.test.com
+                  Version: '1'
+                  Key: '18'
+                  HWID: true
+                  Maintenance: false
+                  Developer: false
+                  AntiDebug: false
+                  AntiVM: false
+                  Time: 1690260888
+                  Result: true
+              example:
+                Name: Application
+                Domain: sub.test.com
+                Version: '1'
+                Key: '18'
+                HWID: true
+                Maintenance: false
+                Developer: false
+                AntiDebug: false
+                AntiVM: false
+                Time: 1690260888
+                Result: true
         '433':
           description: Vorpal error response
           headers:
@@ -591,6 +644,27 @@ paths:
 
       # Response for posting variables.
       responses:
+        '200':
+          description: Variable successfully fetched
+          headers:
+            Authorization:
+              content:
+                text/plain:
+                  schema:
+                    type: string
+                  example: 6a5fa24af58edd754a85850c1e3b4a409e5aee19af4f265741e8112a1efca92c
+          content:
+            text/html; charset=UTF-8:
+              schema:
+                type: string
+                example:
+                  Key: Value
+                  Result: true
+                  Time: 1690260891
+              example:
+                Key: Value
+                Result: true
+                Time: 1690260891
         '433':
           description: Vorpal error response
           headers:
