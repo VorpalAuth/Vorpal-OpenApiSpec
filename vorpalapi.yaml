@@ -8,6 +8,10 @@ info:
     Welcome to the developer portal for our API, everything you need to interact with our API is here. Alternatively you may check out our github for premade API libraries for a variety of programming languages.
 
     ## Frequently asked questions
+    
+    ### What's up with all parameters?
+    
+    All parameters are encoded in base64, use this website to do so https://www.base64encode.org/
 
     ### Where is my ValorId?
     
