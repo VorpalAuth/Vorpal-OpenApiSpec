@@ -25,9 +25,7 @@ info:
 # Servers section defines the base URL for API endpoints.
 servers:
 - url: http://vorpal.gg/API/
-  description: Main (production) server.
-- url: http://localhost:8080/API/
-  description: Local development server.
+  description: Main (production) server
 
 # Paths section contains the individual API endpoints with their methods and details.
 paths:
@@ -53,7 +51,7 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request.
+        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
         required: true
         style: simple
         schema:
@@ -167,7 +165,7 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request.
+        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
         required: true
         style: simple
         schema:
@@ -249,7 +247,7 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request.
+        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
         required: true
         style: simple
         schema:
@@ -391,7 +389,7 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request.
+        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
         required: true
         style: simple
         schema:
@@ -503,7 +501,7 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request.
+        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
         required: true
         style: simple
         schema:
@@ -612,7 +610,7 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request.
+        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
         required: true
         style: simple
         schema:
