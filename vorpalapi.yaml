@@ -11,7 +11,7 @@ info:
     
     ### What's up with all parameters?
     
-    All parameters are encoded in base64, use this website to do so https://www.base64encode.org/
+    All parameters (and the ValorId & ValorKey headers) are encoded in base64 , use this website to do so https://www.base64encode.org/
 
     ### Where is my ValorId?
     
@@ -635,14 +635,28 @@ paths:
           type: string
         example: D398B29D3DBBB9BF201D4C7E1C19FF9D43C15FD45A0CEC46FBE9885EC3F6E97F
 
-      - name: VariableKey
-        in: header
-        description: The key for the variable.
-        required: true
-        style: simple
-        schema:
-          type: string
-        example: S2V5
+      # Request body contains user registration information.
+      requestBody:
+        content:
+          application/x-www-form-urlencoded:
+            encoding: {}
+            schema:
+              required:
+              - email
+              - password
+              - username
+              type: object
+              properties:
+                email:
+                  type: string
+                  example: dGVzdEB2b3JwYWwuZ2c
+                password:
+                  type: string
+                  example: dGVzdDEyMzQ1Ng
+                username:
+                  type: string
+                  example: dGVzdDEyMzQ1
+        required: false
 
       # Response for posting variables.
       responses:
