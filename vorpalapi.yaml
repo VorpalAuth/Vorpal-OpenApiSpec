@@ -51,12 +51,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
+        description: The user agent making the request. This is always Vorpal Client 1.0.
         required: true
         style: simple
         schema:
           type: string
-        example: 7ab8b60c21ee115ab6c986eb975f8c96
+        example: Vorpal Client 1.0
 
       - name: ValorId
         in: header
@@ -165,12 +165,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
+        description: The user agent making the request. This is always Vorpal Client 1.0.
         required: true
         style: simple
         schema:
           type: string
-        example: 7ab8b60c21ee115ab6c986eb975f8c96
+        example: Vorpal Client 1.0
 
       - name: ValorId
         in: header
@@ -247,12 +247,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
+        description: The user agent making the request. This is always Vorpal Client 1.0.
         required: true
         style: simple
         schema:
           type: string
-        example: 7ab8b60c21ee115ab6c986eb975f8c96
+        example: Vorpal Client 1.0
 
       - name: ValorId
         in: header
@@ -389,12 +389,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
+        description: The user agent making the request. This is always Vorpal Client 1.0.
         required: true
         style: simple
         schema:
           type: string
-        example: 7ab8b60c21ee115ab6c986eb975f8c96
+        example: Vorpal Client 1.0
 
       - name: ValorId
         in: header
@@ -501,12 +501,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
+        description: The user agent making the request. This is always Vorpal Client 1.0.
         required: true
         style: simple
         schema:
           type: string
-        example: 7ab8b60c21ee115ab6c986eb975f8c96
+        example: Vorpal Client 1.0
 
       - name: ValorId
         in: header
@@ -610,12 +610,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always 7ab8b60c21ee115ab6c986eb975f8c96.
+        description: The user agent making the request. This is always Vorpal Client 1.0.
         required: true
         style: simple
         schema:
           type: string
-        example: 7ab8b60c21ee115ab6c986eb975f8c96
+        example: Vorpal Client 1.0
 
       - name: ValorId
         in: header
