@@ -642,20 +642,12 @@ paths:
             encoding: {}
             schema:
               required:
-              - email
-              - password
-              - username
+              - VariableKey
               type: object
               properties:
-                email:
+                VariableKey:
                   type: string
-                  example: dGVzdEB2b3JwYWwuZ2c
-                password:
-                  type: string
-                  example: dGVzdDEyMzQ1Ng
-                username:
-                  type: string
-                  example: dGVzdDEyMzQ1
+                  example: S2V5
         required: false
 
       # Response for posting variables.
