@@ -51,12 +51,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always Vorpal Client 1.0.
+        description: The user agent making the request. This is always Vorpal API.
         required: true
         style: simple
         schema:
           type: string
-        example: Vorpal Client 1.0
+        example: Vorpal API
 
       - name: ValorId
         in: header
@@ -165,12 +165,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always Vorpal Client 1.0.
+        description: The user agent making the request. This is always Vorpal API.
         required: true
         style: simple
         schema:
           type: string
-        example: Vorpal Client 1.0
+        example: Vorpal API
 
       - name: ValorId
         in: header
@@ -247,12 +247,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always Vorpal Client 1.0.
+        description: The user agent making the request. This is always Vorpal API.
         required: true
         style: simple
         schema:
           type: string
-        example: Vorpal Client 1.0
+        example: Vorpal API
 
       - name: ValorId
         in: header
@@ -389,12 +389,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always Vorpal Client 1.0.
+        description: The user agent making the request. This is always Vorpal API.
         required: true
         style: simple
         schema:
           type: string
-        example: Vorpal Client 1.0
+        example: Vorpal API
 
       - name: ValorId
         in: header
@@ -501,12 +501,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always Vorpal Client 1.0.
+        description: The user agent making the request. This is always Vorpal API.
         required: true
         style: simple
         schema:
           type: string
-        example: Vorpal Client 1.0
+        example: Vorpal API
 
       - name: ValorId
         in: header
@@ -610,12 +610,12 @@ paths:
 
       - name: User-Agent
         in: header
-        description: The user agent making the request. This is always Vorpal Client 1.0.
+        description: The user agent making the request. This is always Vorpal API.
         required: true
         style: simple
         schema:
           type: string
-        example: Vorpal Client 1.0
+        example: Vorpal API
 
       - name: ValorId
         in: header
